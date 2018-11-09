@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <a href="javascript:history.go(-1);" class="icon-back"></a>
+            <h3>省钱控 - 最新优惠</h3>
+            <div class="mm_appdown">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 产品推荐 -->
+        <div class="pic_rec">
+            <ul class="pro_box clearfix">
+                <!-- 渲染数据 -->
+            </ul>
+        </div>
+
+        <!-- 分类页面 -->
+        <div class="page clearfix">
+            <span>
+                <a href="#" class="current">上一页</a>
+            </span>
+            <span><select name="fy" id="" class="fy">
+                <option value="1">1/10</option>
+            </select></span>
+            <span>
+                <a href="#" class="prev">下一页</a>
+            </span>
+        </div>
+
+        <!-- 底部导航 -->
+        <div class="foot_nav">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+                <a href="#" class="app">手机APP下载</a>
+                <a href="#" class="mobile">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+
+<script type="text/html" id="protpl">
+    {{ each result v i }}
+    <li>
+        <a href="moneyproduct.html?productid={{ v.productId }}">
+        {{#v.productImg2 }}
+        <div class="pic_title">
+            <p>{{v.productName}} <span>{{ v.productPinkage }}</span></p>
+            <p><span>{{ v.productFrom }}|{{ v.productTime }}</span> <span class="comment">{{ v.productComCount.slice(1,2) }}</span></p>
+        </div>
+        </a>
+    </li>
+    {{ /each }}
+</script>
+
+<script type="text/html" id="opttpl">
+    <%  for( var i=1;i<=max;i++ ) { %>
+    <option value="{{ i }}">{{ i }}/{{ max }}</option>
+    <% } %>
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/moneyctrl.js"></script>
+
+</html>

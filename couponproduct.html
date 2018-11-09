@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <a href="javascript:history.go(-1);" class="icon-back"></a>
+            <h3></h3>
+            <div class="mm_appdown">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- 导航推荐 -->
+        <div class="pic_item">
+            <ul class="pic_box clearfix">
+                <!-- 渲染数据 -->
+                <div class="pic_tile">
+                    --点餐前出示手机中的优惠券，即可享受优惠--
+                </div>
+                <div class="pic_content">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <a href="#">
+                                <div class="pic"></div>
+                                <div class="title">
+                                    <h3>啊哈哈哈</h3>
+                                    <h2>ajjajaja</h2>
+                                    <p>有效期</p>
+                                </div>
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+
+
+        <!-- 底部导航 -->
+        <div class="foot_nav">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+                <a href="#" class="app">手机APP下载</a>
+                <a href="#" class="mobile">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+<script type="text/html" id="pro">
+    {{each result v i }}
+    <li class="clearfix">
+            <a href="#">
+                <div class="pic">
+                    {{#v.couponProductImg}}
+                </div>
+                <div class="title">
+                    <h3>{{v.couponProductName
+                        }}</h3>
+                    <h2>{{v.couponProductPrice
+                        }}</h2>
+                    <p>{{v.couponProductTime
+                        }}</p>
+                </div>
+                <i></i>
+            </a>
+        </li>
+    {{ /each }}
+</script>
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/couponproduct.js"></script>
+
+</html>

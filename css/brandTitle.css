@@ -1,0 +1,67 @@
+.nav {
+    height: 38px;
+    background-image: linear-gradient(to bottom,#fff,#ebebeb);
+    border-top: 1px solid #ebebeb;
+    border-bottom:  1px solid #ccc;
+    line-height: 36px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.nav a {
+    color: #000;
+}
+
+.tips {
+    height: 40px;
+    margin: 10px 5px 10px 5px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: rgb(135, 70, 4);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: rgb(238, 238, 238);
+}
+
+#category {
+    border-radius: 5px;
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+}
+#category>ul>li>a {
+    height: 40px;
+    background:url('http://www.zuyushop.com/wap/images/arrow1.gif') right center no-repeat;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    padding-left: 16px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+.category-content {
+    background-color: #f9f9f9;
+}
+.category-content li {
+    float: left;
+    width: 33.3%;
+    height: 40px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+}
+.category-content li a {
+    display: block;
+    width: 100%;
+    color: #333;
+}
+.category-content {
+    display: none;
+    transition: all 1s;
+}
+.category-content.active {
+    display: block;
+
+}

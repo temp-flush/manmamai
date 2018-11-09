@@ -1,0 +1,161 @@
+.mm_header {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    height: 44px;
+}
+.icon-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 44px;
+    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'/></svg>") center center no-repeat ;
+}
+.mm_header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    line-height: 44px;
+}
+.mm_appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.pro_box {
+    padding: 4px 10px;
+    background: white;
+}
+.pic_title h3 {
+    font-size: 18px;
+    margin: 10px auto 5px auto;
+    font-weight: 800;
+    text-align: left;
+    word-break: break-all;
+    color: #5a5a5a;
+    line-height: normal;
+}
+.pic_title>p {
+    margin:  12px auto;
+    color: #999;
+    font-size: 12px;
+}
+.pro_title p{
+    line-height: 24px;
+    color: #606060;
+    word-break: break-all;
+    margin: 6px auto;
+    font-size: 16px;
+}
+.pro_pic {
+    width: 120px;
+    float: right;
+    margin: 12px auto auto 10px;
+    overflow: hidden;
+    height: 120px;
+}
+.buy {
+    margin: 20px 10px;
+    background-color: #FF9000;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    }
+.tit,
+.lastest {
+    font-size: 16px;
+    padding: 12px 2px;
+}
+.reply {
+    border: 2px solid #ECEAE8;
+    border-radius: 2px;
+    padding: 4px 0 0 4px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+}
+#ctl00_ContentBody_txt_nr {
+    height: 150px;
+}
+.reply .tjdp {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    background-color: #ff841d;
+    border-left: none;
+    border-top: none;
+    width: 100px;
+    height: 39px;
+    outline: 0;
+    border-radius: 0 0 2px 0;
+    font-size: 16px;
+    color: white;
+}
+#disstorck {
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+}
+#disstorck a {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    padding: 2px 10px;
+    color: #000;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+}
+#disstorck a {
+    text-align: left
+}
+#disstorck a span {
+    width: 100%;
+    display: block;
+    padding: 2px 5px;
+    border-bottom: 1px dashed #ccc;
+}
+#disstorck a strong {
+    float: right;
+    color: #f27b04;
+}
+.userimg {
+    float: left;
+}
+.userimg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.con  {
+    overflow: hidden;
+    margin: 10px;
+}
+.con .name {
+    margin-left: 15px;
+    height: 20px;
+}
+.con .username {
+    float: left;
+    color: #5997c0;
+    font-size: 13px;
+}
+.con .time {
+    float: right;
+    color: #999999;
+    font-size: 13px;
+}
+.con .content {
+    float: left;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.pro_title img {
+    width: 220px;
+    height: 220px;
+}

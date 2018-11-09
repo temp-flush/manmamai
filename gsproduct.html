@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <a href="javascript:history.go(-1);" class="icon-back"></a>
+            <h3>凑单品</h3>
+            <div class="mm_appdown">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul class="clearfix firNav">
+                <li><a href="javascript:;" data-id="1">京东</a><i></i></li>
+                <li><a href="javascript:;" data-id="2">华北</a><i></i></li>
+                <li><a href="javascript:;" data-id="3">全部价格</a><i></i></li>
+            </ul>
+            <div class="search">
+                <i></i>
+            </div>
+            <div class="minibar">
+                <ul class="clearfix secNav">
+
+                </ul>
+                <ul class="clearfix thirNav">
+
+                </ul>
+                <ul class="clearfix forNav">
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- 产品推荐 -->
+        <div class="pic_rec">
+            <ul class="pro_box clearfix">
+                <!-- 渲染数据 -->
+
+            </ul>
+        </div>
+
+
+
+        <!-- 底部导航 -->
+        <div class="foot_nav">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;">注册</a>
+            <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+                <a href="javascript:;" class="app">手机APP下载</a>
+                <a href="javascript:;" class="mobile">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+
+<script type="text/html" id="protpl">
+    {{ each result v i }}
+    <li><a href="javascript:;" data-id={{ v.shopId
+    }}>{{ v.shopName
+    }}</a><i></i></li>
+    {{ /each }}
+</script>
+
+<script type="text/html" id="protpl2">
+    {{ each result v i }}
+    <li><a href="javascript:;" data-id={{ v.areaId
+    }}>{{ v.areaName
+    }}</a><i></i></li>
+    {{ /each }}
+</script>
+
+<script type="text/html" id="protpl3">
+    {{ each result v i }}
+      <!-- 渲染数据 -->
+      <li>
+        <a href="javascript:;">
+            <img src="{{ v.productImg }}" alt="">
+            <p>{{ v.productName }}</p>
+            <p><span>{{ v.productPrice  }}</span> <span>去凑单</span></p>
+        </a>
+    </li>
+    {{ /each }}
+</script>
+
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/gsproduct.js"></script>
+
+</html>

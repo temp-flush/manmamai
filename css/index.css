@@ -1,0 +1,88 @@
+.mm_menu {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #f1f1f1;
+}
+.mm_menu ul {
+    padding: 10px 0;
+    background-color: white;
+}
+.mm_menu li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 15px;
+
+}
+.mm_menu li a {
+    display: block;
+}
+.mm_menu li a img{
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+.mm_menu li.active {
+    transform: scale(0);
+    height: 0;
+}
+
+.list-title-content {
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    padding-left: 6px;
+    background-image: linear-gradient(to bottom ,#ffaf47,#ff9000)
+}
+.list-title-content span {
+    font-size: 16px;
+}
+.list-title-content img {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: 6px;
+}
+.pro_box li{
+    padding: 14px 8px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.pic img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.pic .pic_title{
+    padding-left: 110px;
+    word-break: break-all;
+    color: #333;
+    font-size: 15px;
+    line-height: 19px;
+    min-height: 57px;
+    text-align: left;
+}
+.pic .pic_title>p {
+    min-height: 57px;
+}
+.pic .pic_title>p span {
+    color: #ff6c00;
+}
+.pic .pic_title>span{
+    color: #a1a1a1;
+    font-size: 12px;
+}
+.pic .pic_title .pro_comment{
+    float: right;
+}
+.more-bar a {
+    margin: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    background-color: #F4F4F4;
+    background-image: linear-gradient(to bottom,white,#f4f4f4)
+}
+

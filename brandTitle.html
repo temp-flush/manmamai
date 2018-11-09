@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/brandTitle.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <div class="mm_logo">
+                <a href="#">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="mm_appdown">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 网站搜索 -->
+        <section class="mm_search">
+            <form action="#">
+                <input type="text" placeholder="请输入您想比价的商品">
+                <input type="button" value="搜索">
+            </form>
+        </section>
+
+        <section class="nav">
+            <!-- 渲染导航 -->
+
+        </section>
+
+        <div class="tips">
+            <h3>热门品牌排行</h3>
+        </div>
+
+        <div id="category">
+            <ul class="category_title clearfix">
+
+            </ul>
+        </div>
+
+        <!-- 底部导航 -->
+        <div class="foot_nav">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+                <a href="#" class="app">手机APP下载</a>
+                <a href="#" class="mobile">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+
+
+<script type="text/html" id="navtpl">
+
+    <a href="index.html">首页</a>><a href="category.html">全部分类</a>
+    >
+
+
+</script>
+
+
+<script type="html/text" id="categorytpl">
+    {{ each result v i }}
+    <li>
+        <a href="brand.html?brandTitleId={{ v.brandTitleId }}" class="first"   data-cate="{{ v.categoryId  }}"">{{ v.brandTitle }}</a>
+        <ul class="category-content clearfix">
+        </ul>
+    </li>
+    {{ /each }}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/brandTitle.js"></script>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <div class="mm_logo">
+                <a href="#">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="mm_appdown">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 网站搜索 -->
+        <section class="mm_search">
+            <form action="#">
+                <input type="text" placeholder="请输入您想比价的商品">
+                <input type="button" value="搜索">
+            </form>
+        </section>
+
+        <section class="nav">
+            <!-- 渲染导航 -->
+
+        </section>
+
+
+
+
+        <!-- 首页商品 -->
+        <div class="mm_main">
+            <div class="pro_box clearfix">
+                <!-- 渲染商品 -->
+                <div class="product_name">
+                    <h3>乐视</h3>
+                    <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="">
+                    <span><img src="http://www.zuyushop.com/wap/images/sc.jpg" alt=""></span>
+                </div>
+
+                <div class="tab">
+                    <ul>
+                        <li>比价购买</li>
+                        <li>产品参数</li>
+                        <li>评价(2322)</li>
+                    </ul>
+                </div>
+
+                <div class="plist">
+                    <div class="pl_title">
+                        <span><img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="" style="width:16px;height:16px"></span>
+                        <span>京东商城</span>
+                        <span class="buy fr">去购买</span>
+                        <span class="fr">&yen;1499.00</span>
+                    </div>
+                    <div class="pl_tips">
+                        <span>
+                            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+                        </span>
+                    </div>
+                </div>
+
+                <div class="comment_title">
+                    <div>
+                        网友评价
+                    </div>
+                </div>
+
+                <div class="comment_content">
+                    <ul class="clearfix">
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 底部导航 -->
+            <div class="foot_nav">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+            </div>
+
+            <!-- 底部 -->
+            <div class="footer">
+                <p>
+                    <a href="#" class="app">手机APP下载</a>
+                    <a href="#" class="mobile">慢慢买手机版</a>
+                    --掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+
+        <script type="text/html" id="category">
+
+        <a href="index.html">首页</a>><a href="category.html">全部分类</a>>
+            
+        {{ each result v i }}
+        <a href="#">{{ v.category }}</a>
+        {{ /each }}
+        >
+        <a href="#" class="select">筛选</a>
+
+    </script>
+
+        <script type="text/html" id="progory">
+        {{ each result v i }}
+            <h3>{{ v.productName }}</h3>
+            {{#v.productImg}}
+            <span><img src="http://www.zuyushop.com/wap/images/sc.jpg" alt=""></span>
+        {{ /each }}
+        
+    </script>
+
+        <script type="text/html" id="plgory">
+        {{ each result v i }}
+           {{#v.bjShop }}
+        {{ /each }}
+    </script>
+
+    <script type="text/html" id="comgory">
+        {{ each result v i }}
+    <li>
+        <div class="com_top clearfix">
+            <span class="fl">{{ v.comName }}</span>
+            <span class="fr">{{ v.comTime }}</span>
+        </div>
+        <div class="com_center">{{ v.comFrom }}</div>
+        <div class="com_bottom">
+            {{ v.comContent  }}
+        </div>
+    </li>
+    {{  /each }}
+    </script>
+
+
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/bijia.js"></script>
+
+</html>

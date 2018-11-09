@@ -1,0 +1,95 @@
+.nav {
+    height: 38px;
+    background-image: linear-gradient(to bottom,#fff,#ebebeb);
+    border-top: 1px solid #ebebeb;
+    border-bottom:  1px solid #ccc;
+    line-height: 36px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.nav a {
+    color: #000;
+}
+a.select {
+    float: right;
+    margin-right: 8px;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    background-color: #d0d0d0;
+    background-image: linear-gradient(to bottom,#d7d7d7,#f5f5f5);
+    border-bottom: 1px solid #bababa;
+    box-shadow: 0 1px 2px #888;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    border: none;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+.page {
+    margin-top: 20px;
+}
+
+.page span {
+    float: left;;
+    width: 33.3%;
+    text-align: center;
+}
+
+.page span a {
+    background-image: linear-gradient(to bottom,#f1f1f1,#d4d4d4);
+    box-shadow: 0 0 1px #666;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 8px 20px;
+    color: #000;
+}
+
+.page  .fy {
+    border: 1px solid rgb(186, 186, 186);
+    font-size: 16px;
+    padding: 8px 15px;
+    height: 36px;
+}
+
+.pro_box li {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+    clear: both;
+}
+.pro_box li a {
+    display: block;
+}
+.pro_box li a img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.pro_box li a .title {
+    padding-left: 110px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.pro_box li a .title p:nth-child(1) {
+    color: #333;
+    line-height: 22px;
+    min-height: 44px;
+    word-break: break-all;
+}
+.pro_box li a .title p:nth-child(2) {
+    color: #ea3900;
+    font-size: 18px;
+    vertical-align: middle;
+    word-break: break-all;
+}
+.pro_box li a .title p:nth-child(3) {
+    font-size: 12px;
+}
+.pro_box li a .title p:nth-child(3) span:nth-child(1){
+    margin-right: 10px;
+}

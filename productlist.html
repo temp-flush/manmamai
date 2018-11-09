@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productlist.css">
+</head>
+
+<body>
+    <div class="mm_container">
+
+        <!-- 网站头部 -->
+        <div class="mm_header">
+            <div class="mm_logo">
+                <a href="#">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="mm_appdown">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 网站搜索 -->
+        <section class="mm_search">
+            <form action="#">
+                <input type="text" placeholder="请输入您想比价的商品">
+                <input type="button" value="搜索">
+            </form>
+        </section>
+
+        <section class="nav">
+            <!-- 渲染导航 -->
+
+        </section>
+
+
+
+
+        <!-- 首页商品 -->
+        <div class="mm_main">
+            <ul class="pro_box clearfix">
+                <!-- 渲染商品 -->
+
+            </ul>
+        </div>
+
+        <!-- 分类页面 -->
+        <div class="page clearfix">
+            <span>
+                <a href="#" class="current">上一页</a>
+            </span>
+            <span><select name="fy" id="" class="fy">
+                    <option value="1">1/10</option>
+                </select></span>
+            <span>
+                <a href="#" class="prev">下一页</a>
+            </span>
+        </div>
+
+
+        <!-- 底部导航 -->
+        <div class="foot_nav">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部</a>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+                <a href="#" class="app">手机APP下载</a>
+                <a href="#" class="mobile">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <script type="text/html" id="category">
+
+        <a href="index.html">首页</a>><a href="category.html">全部分类</a>>
+            
+        {{ each result v i }}
+        <a href="#">{{ v.category }}</a>
+        {{ /each }}
+        >
+        <a href="#" class="select">筛选</a>
+
+    </script>
+
+    <script type="text/html" id="pro_main">
+        {{ each result v i }}
+        <li>
+            <a href="bijia.html?categoryid={{ v.categoryId }}&productid={{ v.productId }}">
+                {{#v.productImg }}
+                <div class="title">
+                    <p>{{ v.productName }}</p>
+                    <p>{{ v.productPrice }}</p>
+                    <p> <span>{{ v.productQuote }}</span>
+                    <span>{{ v.productCom }}</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <script type="text/html" id="pro_page">
+        <% for (var i=1;i<=maxPage;i++) { %>
+        <option value="{{ i }}">{{ i }}/{{ maxPage }}</option>
+        <% } %>
+    </script>
+
+
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/IScroll/iscroll.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/productlist.js"></script>
+
+</html>

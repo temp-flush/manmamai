@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+.mm_container {
+    min-width: 320px;
+    width: 100%;
+}
+
+/* 网站头部 */
+.mm_header {
+    height: 50px;
+    background-color: #ff841d;
+}
+.mm_header .mm_logo {
+    width: 75%;
+    float: left;
+    margin-left: 5px;
+    padding: 12px;
+}
+.mm_header .mm_logo a {
+    display: block;
+}
+.mm_header .mm_logo img {
+    max-height: 25px;
+    overflow: hidden;
+    width: auto;
+}
+.mm_header .mm_appdown {
+    float: right;
+    padding: 7px;
+}
+.mm_header .mm_appdown a {
+    display: block;
+}
+.mm_header .mm_appdown a img {
+    max-height: 34px;
+    width: auto;
+}
+
+
+/* 网站搜索*/
+.mm_search {
+    padding: 10px;
+    background-color: white;
+}
+.mm_search form {
+    position: relative;
+    padding-right: 70px;
+}
+.mm_search input[type='text'] {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 13px;
+    padding-right: 50px;
+    padding-left: 20px;
+    border: none;
+}
+.mm_search input[type='button'] {
+    position: absolute;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: #ff841d;
+    border-radius: 15px;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+
+/* 底部导航 */
+.foot_nav {
+    text-align: center;
+    background-color: #efefef;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+    clear: both;
+
+}
+.foot_nav a {
+    float: left;
+    width: 33.3%;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    color: #000;
+
+}
+.foot_nav a img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+
+/* 底部样式 */
+.footer {
+    background-color: #efefef;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+}
+
+.footer a.app {
+    color: red;
+}
+.footer a.mobile {
+    color: #000;
+}
